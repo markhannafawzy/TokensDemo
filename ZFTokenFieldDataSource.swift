@@ -89,6 +89,7 @@ class ZFTokenFieldDataProvider: NSObject,ZFTokenFieldDataSource , ZFTokenFieldDe
             tokenField.floatingLabel.text = tokenField.textField.placeholder
             tokenField.textField.placeholder = ""
         }
+        self.configureCell()
     }
     func tokenFieldDidEndEditing(_ tokenField: ZFTokenField!) {
         if tokenField.numberOfToken() == 0 && tokenField.textField.text != ""{
@@ -98,5 +99,8 @@ class ZFTokenFieldDataProvider: NSObject,ZFTokenFieldDataSource , ZFTokenFieldDe
             tokenField.floatingLabel.text = ""
             tokenField.textField.placeholder = "enter something"
         }
+    }
+    func tokenField(_ tokenField: ZFTokenField!, didTextChanged text: String!) {
+        self.configureCell()
     }
 }
