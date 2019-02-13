@@ -32,10 +32,13 @@ class TokensTableViewCell: UITableViewCell {
             make.top.equalTo(self.contentView).offset(0)
             make.bottom.equalTo(self.contentView).offset(0)
         }
-        if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
-            
-            // The app is in right-to-left mode
-            self.tokenField.transform = CGAffineTransform(scaleX: -1, y: 1)
+        UIView.appearance().semanticContentAttribute = .forceRightToLeft
+
+        AppDelegate.flipContent(view: self.tokenField)
+        for subview in self.tokenField.subviews {
+            AppDelegate.flipContent(view: subview)
         }
+        
+        //self.tokenField.transform = CGAffineTransform(scaleX: -1, y: 1)
     }
 }

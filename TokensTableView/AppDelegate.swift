@@ -18,9 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case ar
         case en
     }
+    static let language:Language = Language.en
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        //UIView.appearance().semanticContentAttribute = .forceRightToLeft
         return true
     }
 
@@ -90,6 +89,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+    
+    static func flipContent(view:UIView){
+        if AppDelegate.language == AppDelegate.Language.ar{
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            view.layer.setAffineTransform(CGAffineTransform(scaleX: -1, y: 1))
+            view.semanticContentAttribute = .forceRightToLeft
+        }
+        else{
+            view.layer.setAffineTransform(CGAffineTransform(scaleX: 1, y: 1))
+            view.semanticContentAttribute = .forceLeftToRight
         }
     }
 
