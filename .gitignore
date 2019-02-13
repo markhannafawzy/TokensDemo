@@ -61,3 +61,91 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+Podfile.lock
+Pods/Manifest.lock
+Pods/Masonry/LICENSE
+Pods/Masonry/README.md
+Pods/Masonry/Masonry/MASCompositeConstraint.h
+Pods/Masonry/Masonry/MASCompositeConstraint.m
+Pods/Masonry/Masonry/MASConstraint+Private.h
+Pods/Masonry/Masonry/MASConstraint.h
+Pods/Masonry/Masonry/MASConstraint.m
+Pods/Masonry/Masonry/MASConstraintMaker.h
+Pods/Masonry/Masonry/MASConstraintMaker.m
+Pods/Masonry/Masonry/MASLayoutConstraint.h
+Pods/Masonry/Masonry/MASLayoutConstraint.m
+Pods/Masonry/Masonry/Masonry.h
+Pods/Masonry/Masonry/MASUtilities.h
+Pods/Masonry/Masonry/MASViewAttribute.h
+Pods/Masonry/Masonry/MASViewAttribute.m
+Pods/Masonry/Masonry/MASViewConstraint.h
+Pods/Masonry/Masonry/MASViewConstraint.m
+Pods/Masonry/Masonry/NSArray+MASAdditions.h
+Pods/Masonry/Masonry/NSArray+MASAdditions.m
+Pods/Masonry/Masonry/NSArray+MASShorthandAdditions.h
+Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.h
+Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.m
+Pods/Masonry/Masonry/View+MASAdditions.h
+Pods/Masonry/Masonry/View+MASAdditions.m
+Pods/Masonry/Masonry/View+MASShorthandAdditions.h
+Pods/Masonry/Masonry/ViewController+MASAdditions.h
+Pods/Masonry/Masonry/ViewController+MASAdditions.m
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/SnapKit/LICENSE
+Pods/SnapKit/README.md
+Pods/SnapKit/Source/Constraint.swift
+Pods/SnapKit/Source/ConstraintAttributes.swift
+Pods/SnapKit/Source/ConstraintConfig.swift
+Pods/SnapKit/Source/ConstraintConstantTarget.swift
+Pods/SnapKit/Source/ConstraintDescription.swift
+Pods/SnapKit/Source/ConstraintDSL.swift
+Pods/SnapKit/Source/ConstraintInsets.swift
+Pods/SnapKit/Source/ConstraintInsetTarget.swift
+Pods/SnapKit/Source/ConstraintItem.swift
+Pods/SnapKit/Source/ConstraintLayoutGuide+Extensions.swift
+Pods/SnapKit/Source/ConstraintLayoutGuide.swift
+Pods/SnapKit/Source/ConstraintLayoutGuideDSL.swift
+Pods/SnapKit/Source/ConstraintLayoutSupport.swift
+Pods/SnapKit/Source/ConstraintLayoutSupportDSL.swift
+Pods/SnapKit/Source/ConstraintMaker.swift
+Pods/SnapKit/Source/ConstraintMakerEditable.swift
+Pods/SnapKit/Source/ConstraintMakerExtendable.swift
+Pods/SnapKit/Source/ConstraintMakerFinalizable.swift
+Pods/SnapKit/Source/ConstraintMakerPriortizable.swift
+Pods/SnapKit/Source/ConstraintMakerRelatable.swift
+Pods/SnapKit/Source/ConstraintMultiplierTarget.swift
+Pods/SnapKit/Source/ConstraintOffsetTarget.swift
+Pods/SnapKit/Source/ConstraintPriority.swift
+Pods/SnapKit/Source/ConstraintPriorityTarget.swift
+Pods/SnapKit/Source/ConstraintRelatableTarget.swift
+Pods/SnapKit/Source/ConstraintRelation.swift
+Pods/SnapKit/Source/ConstraintView+Extensions.swift
+Pods/SnapKit/Source/ConstraintView.swift
+Pods/SnapKit/Source/ConstraintViewDSL.swift
+Pods/SnapKit/Source/Debugging.swift
+Pods/SnapKit/Source/LayoutConstraint.swift
+Pods/SnapKit/Source/LayoutConstraintItem.swift
+Pods/SnapKit/Source/Typealiases.swift
+Pods/SnapKit/Source/UILayoutSupport+Extensions.swift
+Pods/Target Support Files/Masonry/Info.plist
+Pods/Target Support Files/Masonry/Masonry-dummy.m
+Pods/Target Support Files/Masonry/Masonry-prefix.pch
+Pods/Target Support Files/Masonry/Masonry-umbrella.h
+Pods/Target Support Files/Masonry/Masonry.modulemap
+Pods/Target Support Files/Masonry/Masonry.xcconfig
+Pods/Target Support Files/Pods-TokensTableView/Info.plist
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-acknowledgements.markdown
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-acknowledgements.plist
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-dummy.m
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-frameworks.sh
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-resources.sh
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-umbrella.h
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.debug.xcconfig
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.modulemap
+Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.release.xcconfig
+Pods/Target Support Files/SnapKit/Info.plist
+Pods/Target Support Files/SnapKit/SnapKit-dummy.m
+Pods/Target Support Files/SnapKit/SnapKit-prefix.pch
+Pods/Target Support Files/SnapKit/SnapKit-umbrella.h
+Pods/Target Support Files/SnapKit/SnapKit.modulemap
+Pods/Target Support Files/SnapKit/SnapKit.xcconfig
