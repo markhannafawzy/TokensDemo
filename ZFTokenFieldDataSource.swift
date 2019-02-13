@@ -52,11 +52,12 @@ class ZFTokenFieldDataProvider: NSObject,ZFTokenFieldDataSource , ZFTokenFieldDe
         let view = nibContents![0] as! UIView
         let label = view.viewWithTag(2) as! UILabel
         let button = view.viewWithTag(3) as! UIButton
-        
         button.addTarget(self, action: #selector(tokenDeleteButtonPressed), for: .touchUpInside)
         label.text = self.tokens[Int(bitPattern: index)]
         let size = label.sizeThatFits(CGSize(width: tokenField.frame.size.width, height: tokenField.frame.size.height))
-        
+        for subview in view.subviews {
+            AppDelegate.flipContent(view: subview)
+        }
         view.frame = CGRect(x: 0, y: 50, width: size.width + 97, height: 40)
         
         return view
