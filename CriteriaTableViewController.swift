@@ -11,6 +11,7 @@ import UIKit
 class CriteriaTableViewController: UITableViewController {
     var viewModel: CriteriaViewModel!
     var searchController = UISearchController(searchResultsController: nil)
+    let themeColor = UIColor.init(red: 58/255, green: 198/255, blue: 204/255, alpha: 1.0)
     override func viewDidLoad() {
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
@@ -18,6 +19,15 @@ class CriteriaTableViewController: UITableViewController {
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.sizeToFit()
         self.tableView.tableHeaderView = searchController.searchBar
+        searchController.searchBar.barTintColor = themeColor
+        initUI()
+    }
+    
+    func initUI() {
+        let cancelButtonAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes , for: .normal)
+        //self.navigationController?.navigationItem.backBarButtonItem?.
+
     }
 
     // MARK: - Table view data source

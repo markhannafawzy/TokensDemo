@@ -17,17 +17,6 @@ class CriteriaViewModel {
     
     init(criteria: [RefineRowLabel: [String]]) {
         self.criteriaDictionary = criteria
-//        specialites.append("internal medicine")
-//        specialites.append("general pediatric")
-//        specialites.append("pediatric cardiology")
-//        specialites.append("Cardiology")
-//        specialites.append("senior consultant")
-//        specialites.append("Ophthalmologist")
-//        specialites.append("zsfsdasf")
-//        specialites.append("hjydasf")
-//        specialites.append("ioasf")
-//        specialites.append("iuludasf")
-//        specialites.append("odasf")
     }
     
     func stringForDictionaryKey() -> String {

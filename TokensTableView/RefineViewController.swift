@@ -30,7 +30,15 @@ class RefineViewController: UIViewController, UITableViewDataSource, UITableView
         refineLabelDictionary[3] = RefineRowLabel.Symptoms
         refineLabelDictionary[4] = RefineRowLabel.Insurance
         
-        refineTagsCriteriaDictionary[RefineRowLabel.Symptoms] = ["tttt","gfdsbdfbvdf gvdfvdf"]
+        var specialities:[String] = []
+        specialities.append("internal medicine")
+        specialities.append("general pediatric")
+        specialities.append("pediatric cardiology")
+        specialities.append("Cardiology")
+        specialities.append("senior consultant")
+        specialities.append("Ophthalmologist")
+
+        refineTagsCriteriaDictionary[RefineRowLabel.Symptoms] = specialities
 
         // Do any additional setup after loading the view.
     }
