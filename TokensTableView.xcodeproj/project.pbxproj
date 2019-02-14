@@ -13,11 +13,16 @@
 		7E11B327221176E500ED8F10 /* TokensTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E11B325221176E500ED8F10 /* TokensTableView.xcdatamodeld */; };
 		7E11B329221176E700ED8F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E11B328221176E700ED8F10 /* Assets.xcassets */; };
 		7E11B32C221176E700ED8F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E11B32A221176E700ED8F10 /* LaunchScreen.storyboard */; };
-		7E11B3342211775600ED8F10 /* TokensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E11B3332211775600ED8F10 /* TokensTableViewCell.swift */; };
-		7E11B3362211779900ED8F10 /* TokensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E11B3352211779900ED8F10 /* TokensTableViewController.swift */; };
 		7E11B3392211AE7300ED8F10 /* TokenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E11B33722117CB400ED8F10 /* TokenView.xib */; };
-		7E11B33B2211D08B00ED8F10 /* ZFTokenFieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E11B33A2211D08B00ED8F10 /* ZFTokenFieldDataSource.swift */; };
-		7E87FA432212D371002257FF /* ZFTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E87FA422212D371002257FF /* ZFTokenField.m */; };
+		D86B32E2221566F500457135 /* TokenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86B32E1221566F500457135 /* TokenTableViewCell.xib */; };
+		D86B32E42215684800457135 /* TokenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32E32215684800457135 /* TokenTableViewCell.swift */; };
+		D86B32E822156E1900457135 /* RefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32E722156E1900457135 /* RefineViewController.swift */; };
+		D86B32F422157ACF00457135 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32EF22157ACE00457135 /* Theme.swift */; };
+		D86B32F522157ACF00457135 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32F022157ACE00457135 /* TagCollectionCell.swift */; };
+		D86B32F622157ACF00457135 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32F122157ACE00457135 /* CloseButton.swift */; };
+		D86B32F722157ACF00457135 /* TaglistCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32F222157ACE00457135 /* TaglistCollection.swift */; };
+		D86B32F822157ACF00457135 /* StringExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32F322157ACE00457135 /* StringExtentions.swift */; };
+		D86B32FC22157B0500457135 /* TagCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86B32FB22157B0500457135 /* TagCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,16 +33,19 @@
 		7E11B328221176E700ED8F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E11B32B221176E700ED8F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E11B32D221176E700ED8F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E11B3332211775600ED8F10 /* TokensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTableViewCell.swift; sourceTree = "<group>"; };
-		7E11B3352211779900ED8F10 /* TokensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokensTableViewController.swift; sourceTree = "<group>"; };
 		7E11B33722117CB400ED8F10 /* TokenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TokenView.xib; sourceTree = "<group>"; };
-		7E11B33A2211D08B00ED8F10 /* ZFTokenFieldDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFTokenFieldDataSource.swift; sourceTree = "<group>"; };
-		7E87FA402212D370002257FF /* TokensTableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TokensTableView-Bridging-Header.h"; sourceTree = "<group>"; };
-		7E87FA412212D371002257FF /* ZFTokenField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTokenField.h; sourceTree = "<group>"; };
-		7E87FA422212D371002257FF /* ZFTokenField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTokenField.m; sourceTree = "<group>"; };
 		9ABDF115C76E25C52BDC3CAD /* Pods_TokensTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokensTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC2875A3727AF9DDAB48F34 /* Pods-TokensTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokensTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		CACDD313B5CDD4134394846E /* Pods-TokensTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokensTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.release.xcconfig"; sourceTree = "<group>"; };
+		D86B32E1221566F500457135 /* TokenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TokenTableViewCell.xib; sourceTree = "<group>"; };
+		D86B32E32215684800457135 /* TokenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewCell.swift; sourceTree = "<group>"; };
+		D86B32E722156E1900457135 /* RefineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefineViewController.swift; sourceTree = "<group>"; };
+		D86B32EF22157ACE00457135 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D86B32F022157ACE00457135 /* TagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
+		D86B32F122157ACE00457135 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		D86B32F222157ACE00457135 /* TaglistCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaglistCollection.swift; sourceTree = "<group>"; };
+		D86B32F322157ACE00457135 /* StringExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtentions.swift; sourceTree = "<group>"; };
+		D86B32FB22157B0500457135 /* TagCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,6 @@
 		7E11B312221176E500ED8F10 = {
 			isa = PBXGroup;
 			children = (
-				7E11B33A2211D08B00ED8F10 /* ZFTokenFieldDataSource.swift */,
 				7E11B31D221176E500ED8F10 /* TokensTableView */,
 				7E11B31C221176E500ED8F10 /* Products */,
 				C5991209288D757A21B6DC98 /* Pods */,
@@ -74,7 +81,8 @@
 		7E11B31D221176E500ED8F10 /* TokensTableView */ = {
 			isa = PBXGroup;
 			children = (
-				7E87FA3F2212D311002257FF /* ZFTokenField */,
+				D86B32FA22157AFC00457135 /* Assets */,
+				D86B32F922157AD600457135 /* Classes */,
 				7E11B31E221176E500ED8F10 /* AppDelegate.swift */,
 				7E11B322221176E500ED8F10 /* Main.storyboard */,
 				7E11B33722117CB400ED8F10 /* TokenView.xib */,
@@ -82,20 +90,11 @@
 				7E11B32A221176E700ED8F10 /* LaunchScreen.storyboard */,
 				7E11B32D221176E700ED8F10 /* Info.plist */,
 				7E11B325221176E500ED8F10 /* TokensTableView.xcdatamodeld */,
-				7E11B3332211775600ED8F10 /* TokensTableViewCell.swift */,
-				7E11B3352211779900ED8F10 /* TokensTableViewController.swift */,
+				D86B32E1221566F500457135 /* TokenTableViewCell.xib */,
+				D86B32E32215684800457135 /* TokenTableViewCell.swift */,
+				D86B32E722156E1900457135 /* RefineViewController.swift */,
 			);
 			path = TokensTableView;
-			sourceTree = "<group>";
-		};
-		7E87FA3F2212D311002257FF /* ZFTokenField */ = {
-			isa = PBXGroup;
-			children = (
-				7E87FA412212D371002257FF /* ZFTokenField.h */,
-				7E87FA422212D371002257FF /* ZFTokenField.m */,
-				7E87FA402212D370002257FF /* TokensTableView-Bridging-Header.h */,
-			);
-			path = ZFTokenField;
 			sourceTree = "<group>";
 		};
 		A791798487C11208E4446BFC /* Frameworks */ = {
@@ -113,6 +112,28 @@
 				CACDD313B5CDD4134394846E /* Pods-TokensTableView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D86B32F922157AD600457135 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D86B32F122157ACE00457135 /* CloseButton.swift */,
+				D86B32F322157ACE00457135 /* StringExtentions.swift */,
+				D86B32F022157ACE00457135 /* TagCollectionCell.swift */,
+				D86B32F222157ACE00457135 /* TaglistCollection.swift */,
+				D86B32EF22157ACE00457135 /* Theme.swift */,
+			);
+			name = Classes;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D86B32FA22157AFC00457135 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D86B32FB22157B0500457135 /* TagCollectionCell.xib */,
+			);
+			name = Assets;
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E11B32C221176E700ED8F10 /* LaunchScreen.storyboard in Resources */,
+				D86B32FC22157B0500457135 /* TagCollectionCell.xib in Resources */,
 				7E11B329221176E700ED8F10 /* Assets.xcassets in Resources */,
 				7E11B3392211AE7300ED8F10 /* TokenView.xib in Resources */,
 				7E11B324221176E500ED8F10 /* Main.storyboard in Resources */,
+				D86B32E2221566F500457135 /* TokenTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,16 +214,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -215,15 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TokensTableView-checkManifestLockResult.txt",
 			);
@@ -239,12 +254,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86B32F422157ACF00457135 /* Theme.swift in Sources */,
+				D86B32F522157ACF00457135 /* TagCollectionCell.swift in Sources */,
+				D86B32F622157ACF00457135 /* CloseButton.swift in Sources */,
+				D86B32F722157ACF00457135 /* TaglistCollection.swift in Sources */,
+				D86B32F822157ACF00457135 /* StringExtentions.swift in Sources */,
 				7E11B31F221176E500ED8F10 /* AppDelegate.swift in Sources */,
-				7E11B3362211779900ED8F10 /* TokensTableViewController.swift in Sources */,
-				7E11B3342211775600ED8F10 /* TokensTableViewCell.swift in Sources */,
+				D86B32E822156E1900457135 /* RefineViewController.swift in Sources */,
+				D86B32E42215684800457135 /* TokenTableViewCell.swift in Sources */,
 				7E11B327221176E500ED8F10 /* TokensTableView.xcdatamodeld in Sources */,
-				7E87FA432212D371002257FF /* ZFTokenField.m in Sources */,
-				7E11B33B2211D08B00ED8F10 /* ZFTokenFieldDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +420,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = msaad.TokensTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TokensTableView/ZFTokenField/TokensTableView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,7 +442,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = msaad.TokensTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TokensTableView/ZFTokenField/TokensTableView-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
