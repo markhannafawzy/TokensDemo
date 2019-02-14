@@ -12,6 +12,7 @@ class TokenTableViewCell: UITableViewCell {
 
     @IBOutlet weak var criteriaLabel: UILabel!
     @IBOutlet weak var taglistCollection: TaglistCollection!
+    var delegate:TokencellDelegate!
     override func awakeFromNib() {
         super.awakeFromNib()
         setupTaglistView()
@@ -32,6 +33,9 @@ class TokenTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func addAction(_ sender: UIButton) {
+        delegate.buttonClicked()
+    }
 }
 
 extension TokenTableViewCell:TagViewDelegate{
@@ -42,4 +46,8 @@ extension TokenTableViewCell:TagViewDelegate{
     func didTaponTag(_ indexPath: IndexPath) {
         //print("Tag tapped: \(self.aryTeglist[indexPath.item])")
     }
+}
+
+protocol TokencellDelegate {
+    func buttonClicked()
 }

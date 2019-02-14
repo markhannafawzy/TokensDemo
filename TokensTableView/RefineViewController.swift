@@ -6,17 +6,15 @@
 //
 
 import UIKit
-
+enum RefineRowLabel:String{
+    case Speciality
+    case Treatement
+    case Disease
+    case Symptoms
+    case Insurance="Insurance Companies"
+}
 class RefineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    enum RefineRowLabel:String{
-        case Speciality
-        case Treatement
-        case Disease
-        case Symptoms
-        case Insurance="Insurance Companies"
-    }
-    
     @IBOutlet weak var refineTableView: UITableView!
     var refineLabelDictionary = [Int:RefineRowLabel]()
     var refineTagsCriteriaDictionary = [RefineRowLabel:[String]]()
@@ -51,7 +49,7 @@ class RefineViewController: UIViewController, UITableViewDataSource, UITableView
         if let tagsList = refineTagsCriteriaDictionary[refineLabelDictionary[indexPath.row]!]{
             cell.taglistCollection.appendTag(tagNamelist: tagsList)
         }
-        
+        cell.delegate = self
         return cell
     }
     
@@ -63,7 +61,7 @@ class RefineViewController: UIViewController, UITableViewDataSource, UITableView
         return  UITableView.automaticDimension
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -74,4 +72,12 @@ class RefineViewController: UIViewController, UITableViewDataSource, UITableView
     }
     */
 
+}
+
+extension RefineViewController : TokencellDelegate{
+    func buttonClicked() {
+        let specialityVC = self.storyboard?.instantiateViewController(withIdentifier: "CriteriaTableViewController") as! CriteriaTableViewController
+        specialityVC.viewModel = CriteriaViewModel(criteria: refineTagsCriteriaDictionary)
+        self.navigationController?.pushViewController(specialityVC, animated: true)
+    }
 }

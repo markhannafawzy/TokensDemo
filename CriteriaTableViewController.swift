@@ -8,12 +8,11 @@
 
 import UIKit
 
-class SpecialityTableViewController: UITableViewController {
-    var viewModel: SpecialityViewModel!
+class CriteriaTableViewController: UITableViewController {
+    var viewModel: CriteriaViewModel!
     var searchController = UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = SpecialityViewModel()
         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.dimsBackgroundDuringPresentation = false
@@ -29,7 +28,7 @@ class SpecialityTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Speciality" 
+        return viewModel.stringForDictionaryKey()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -37,15 +36,15 @@ class SpecialityTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return searchController.isActive ? viewModel.filteredCount : viewModel.specialityCount
+        return searchController.isActive ? viewModel.filteredCount : viewModel.criteriaCount
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SpecialityTableViewCell", for: indexPath) as! SpecialityTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CriteriaTableViewCell", for: indexPath) as! CriteriaTableViewCell
         
         // Configure the cell...
-        cell.configure(speciality: viewModel.specialites[indexPath.row], checkStatus: CheckStatus.checked)
+        cell.configure(criteria: viewModel.criteriaItems[indexPath.row], checkStatus: CheckStatus.checked)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.checkedAction(sender:)))
         
         cell.checkMark.addGestureRecognizer(tapGesture)
@@ -57,7 +56,7 @@ class SpecialityTableViewController: UITableViewController {
             if imageView.image == CheckStatus.unchecked.image{
                 ((sender.view)as! UIImageView).image = CheckStatus.checked.image
                 let indexPath = self.tableView.indexPath(for: senderView.superview?.superview as! UITableViewCell)
-                viewModel.chosenSpecialities.append(viewModel.specialites[(indexPath?.row)!])
+                viewModel.chosencriteriaItems.append(viewModel.criteriaItems[(indexPath?.row)!])
             }
             else{
                 ((sender.view)as! UIImageView).image = CheckStatus.unchecked.image
@@ -66,7 +65,7 @@ class SpecialityTableViewController: UITableViewController {
     }
 }
 
-extension SpecialityTableViewController: UISearchResultsUpdating {
+extension CriteriaTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchString = searchController.searchBar.text ?? ""
         viewModel.filterSearchController(with: searchString)

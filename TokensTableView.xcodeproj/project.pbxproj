@@ -14,9 +14,9 @@
 		7E11B329221176E700ED8F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E11B328221176E700ED8F10 /* Assets.xcassets */; };
 		7E11B32C221176E700ED8F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E11B32A221176E700ED8F10 /* LaunchScreen.storyboard */; };
 		7E11B3392211AE7300ED8F10 /* TokenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E11B33722117CB400ED8F10 /* TokenView.xib */; };
-		7EA0AFF1221598570062C029 /* SpecialityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0AFEE221598560062C029 /* SpecialityTableViewCell.swift */; };
-		7EA0AFF2221598570062C029 /* SpecialityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0AFEF221598570062C029 /* SpecialityTableViewController.swift */; };
-		7EA0AFF3221598570062C029 /* SpecialityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0AFF0221598570062C029 /* SpecialityViewModel.swift */; };
+		7EA0AFF1221598570062C029 /* CriteriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0AFEE221598560062C029 /* CriteriaTableViewCell.swift */; };
+		7EA0AFF2221598570062C029 /* CriteriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0AFEF221598570062C029 /* CriteriaTableViewController.swift */; };
+		7EA0AFF3221598570062C029 /* CriteriaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0AFF0221598570062C029 /* CriteriaViewModel.swift */; };
 		D86B32E2221566F500457135 /* TokenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86B32E1221566F500457135 /* TokenTableViewCell.xib */; };
 		D86B32E42215684800457135 /* TokenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32E32215684800457135 /* TokenTableViewCell.swift */; };
 		D86B32E822156E1900457135 /* RefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B32E722156E1900457135 /* RefineViewController.swift */; };
@@ -37,9 +37,9 @@
 		7E11B32B221176E700ED8F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E11B32D221176E700ED8F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E11B33722117CB400ED8F10 /* TokenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TokenView.xib; sourceTree = "<group>"; };
-		7EA0AFEE221598560062C029 /* SpecialityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialityTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		7EA0AFEF221598570062C029 /* SpecialityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialityTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		7EA0AFF0221598570062C029 /* SpecialityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialityViewModel.swift; sourceTree = SOURCE_ROOT; };
+		7EA0AFEE221598560062C029 /* CriteriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriteriaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		7EA0AFEF221598570062C029 /* CriteriaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriteriaTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		7EA0AFF0221598570062C029 /* CriteriaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriteriaViewModel.swift; sourceTree = SOURCE_ROOT; };
 		9ABDF115C76E25C52BDC3CAD /* Pods_TokensTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokensTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC2875A3727AF9DDAB48F34 /* Pods-TokensTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokensTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		CACDD313B5CDD4134394846E /* Pods-TokensTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokensTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokensTableView/Pods-TokensTableView.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 				D86B32FA22157AFC00457135 /* Assets */,
 				D86B32F922157AD600457135 /* Classes */,
 				7E11B31E221176E500ED8F10 /* AppDelegate.swift */,
-				7EA0AFEE221598560062C029 /* SpecialityTableViewCell.swift */,
-				7EA0AFEF221598570062C029 /* SpecialityTableViewController.swift */,
-				7EA0AFF0221598570062C029 /* SpecialityViewModel.swift */,
+				7EA0AFEE221598560062C029 /* CriteriaTableViewCell.swift */,
+				7EA0AFEF221598570062C029 /* CriteriaTableViewController.swift */,
+				7EA0AFF0221598570062C029 /* CriteriaViewModel.swift */,
 				7E11B322221176E500ED8F10 /* Main.storyboard */,
 				7E11B33722117CB400ED8F10 /* TokenView.xib */,
 				7E11B328221176E700ED8F10 /* Assets.xcassets */,
@@ -265,16 +265,16 @@
 			files = (
 				D86B32F422157ACF00457135 /* Theme.swift in Sources */,
 				D86B32F522157ACF00457135 /* TagCollectionCell.swift in Sources */,
-				7EA0AFF1221598570062C029 /* SpecialityTableViewCell.swift in Sources */,
+				7EA0AFF1221598570062C029 /* CriteriaTableViewCell.swift in Sources */,
 				D86B32F622157ACF00457135 /* CloseButton.swift in Sources */,
 				D86B32F722157ACF00457135 /* TaglistCollection.swift in Sources */,
 				D86B32F822157ACF00457135 /* StringExtentions.swift in Sources */,
 				7E11B31F221176E500ED8F10 /* AppDelegate.swift in Sources */,
 				D86B32E822156E1900457135 /* RefineViewController.swift in Sources */,
-				7EA0AFF2221598570062C029 /* SpecialityTableViewController.swift in Sources */,
+				7EA0AFF2221598570062C029 /* CriteriaTableViewController.swift in Sources */,
 				D86B32E42215684800457135 /* TokenTableViewCell.swift in Sources */,
 				7E11B327221176E500ED8F10 /* TokensTableView.xcdatamodeld in Sources */,
-				7EA0AFF3221598570062C029 /* SpecialityViewModel.swift in Sources */,
+				7EA0AFF3221598570062C029 /* CriteriaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

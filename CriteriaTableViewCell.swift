@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class SpecialityTableViewCell: UITableViewCell {
+class CriteriaTableViewCell: UITableViewCell {
     @IBOutlet weak var specialityText: UILabel!
     @IBOutlet weak var checkMark: UIImageView!
     
@@ -24,8 +24,8 @@ class SpecialityTableViewCell: UITableViewCell {
         
     }
     
-    func configure(speciality: String, checkStatus: CheckStatus) {
-        self.specialityText.text = speciality
+    func configure(criteria: String, checkStatus: CheckStatus) {
+        self.specialityText.text = criteria
         self.checkMark.image = checkStatus.image
     }
 }
