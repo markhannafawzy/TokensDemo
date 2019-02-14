@@ -102,6 +102,8 @@ class ZFTokenFieldDataProvider: NSObject,ZFTokenFieldDataSource , ZFTokenFieldDe
         }
     }
     func tokenField(_ tokenField: ZFTokenField!, didTextChanged text: String!) {
+        tokenField.textField.setNeedsLayout()
         self.configureCell()
+        tokenField.textField.setNeedsLayout()
     }
 }

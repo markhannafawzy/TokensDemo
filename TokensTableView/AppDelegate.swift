@@ -18,10 +18,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case ar
         case en
     }
-    static let language:Language = Language.en
+    static let language:Language = Language.ar
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }
+    
+//    @objc func keyboardWillShow(_ notification: Notification) {
+//        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+//            let keyboardRectangle = keyboardFrame.cgRectValue
+//            let keyboardHeight = keyboardRectangle.origin.y
+//            let activeCoordinates = getActiveUIComponentCoordinates()
+//            if keyboardHeight-activeCoordinates.y < 30{
+//                let topVC = window?.rootViewController
+//                let intendedTable = topVC?.view.subviews.first(where: { (view) -> Bool in
+//                    return view.isKind(of: UITableView.self)
+//                })
+//                if intendedTable != nil{
+//                    forceScrollTableView(tableView: intendedTable as! UITableView)
+//                }
+//                
+//            }
+//        }
+//    }
+//    
+//    func forceScrollTableView(tableView:UITableView){
+//        tableView.setContentOffset(CGPoint(x: 0, y: tableView.frame.maxY+20), animated: true)
+//    }
+//        
+//    func getActiveUIComponentCoordinates()->CGPoint{
+//        if let activeView=window?.rootViewController?.view.subviews.first(where: { (view) -> Bool in
+//            return view.isFirstResponder
+//        }){
+//            let absoluteCoordinates = activeView.convert(activeView.center, to: activeView.superview?.superview?.superview)
+//            return absoluteCoordinates
+//        }
+//        return CGPoint.zero
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
