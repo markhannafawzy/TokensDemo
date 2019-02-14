@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 class SpecialityTableViewCell: UITableViewCell {
     @IBOutlet weak var specialityText: UILabel!
     @IBOutlet weak var checkMark: UIImageView!
